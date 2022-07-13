@@ -1,11 +1,38 @@
-ㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ
+error 유형 모음
 
-ㄹ
+1. cannot find symbol 또는 cannot resolve symbol 
+   - cause : 변수 또는 메서드의 이름을 잘못 사용한 경우에 발생
+   - solution : 클래스명의 대소문자의 일치여부 확인
+   
+2. ';' expected
+   - cause : 세미콜론 부재
+   - solution : ; 확인
+   
+3. Exception in thread "main" java.lang.NoSuchMethodErrer:main
+   - cause : main 메서드 부재
+   - solution : main 메서드 확인, main 메서드 선언부 오타와 대소문자 일치여부 확인
+   
+4. Exception in thread "main" java.lang.NoClassDefFoundError:Hello
+   - cause : Hello 클래스 부재
+   - solution : 
+   ① Hello 클래스 대소문자 확인
+   ② 문제가 없다면, class file 생성여부 확인
+   ③ classpath 설정 확인 
+   // Hello.java가 컴파일되었으면, Hello.class가 있어야 함 => 정상적으로 생성되었는지 확인한 뒤, 동일한 error이 출력되면, classpath 설정 확인
 
-ㄹ
-ㄹ
-ㄹ
+5. illegal start of expression
+   - cause : 문법적 오류
+   - solution : 
+   ① 괄호 (){} 확인 
+   ② if, for문 문법 확인
+   ③ public, static같은 키워드 오탈자 확인
 
-
-
-
+6. class, interface, or enum expected
+   - cause : 괄호 개수 불일치
+   - solution : (), {} 등 괄호 개수 확인
+   
+7. incompatible types: possible lossy conversion from int to byte
+   - cause : 큰 타입 -> 작은 타입 형변환 값손실 발생
+   - solution : 명시적 형변환 (ex. (char)1000; )
+   
+   
