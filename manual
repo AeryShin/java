@@ -1,4 +1,4 @@
-error 유형 모음
+Java Error type Analysis
 
 1. cannot find symbol 또는 cannot resolve symbol 
    - cause : 변수 또는 메서드의 이름을 잘못 사용한 경우에 발생
